@@ -1,18 +1,51 @@
 body {
+  display: block;
   font-family: Helvetica;
   font-size: 22px;
   color: seashell;
   background-color: black;
-  opacity: 0.9;
+  text-align: center;
+  margin: 0;
 }
 
-.logo {
-  margin-left: 10px;
+.container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+div {
+  display: block;
+}
+
+header img {
+  padding-left: 10px;
   height: 50px;
 }
 
 header {
+  width: 100%;
   position: fixed;
   height: 69px;
+  z-index: 1;
+  background-color: black;
   border-bottom: 1px solid seashell;
+  align-items: center;
+}
+
+nav {
+  text-align: right;
+  flex-grow: 1;
+}
+
+nav span {
+  display: inline-block;
+  text-decoration: underline;
+  padding: 20px 10px;
+}
+main {
+  width: 1200px;
+  margin: auto;
+  padding-top: 69px;
+  opacity: 0.9;
 }
